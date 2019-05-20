@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+    <TableLayout   android:layout_width="match_parent"
+                android:id="@+id/grid"
+                android:layout_height="wrap_content"
+                tools:layout_editor_absoluteX="0dp"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintStart_toEndOf="parent"
+                android:numColumns="4"
+    >
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+        >
+            <Button
+                    android:text="simplify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" tools:layout_editor_absoluteY="240dp"
+                    tools:layout_editor_absoluteX="115dp"
+                    android:id="@+id/simplify" android:onClick="onButtonClick"
+            />
+            <Button
+                    android:text="Factor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" tools:layout_editor_absoluteY="240dp"
+                    tools:layout_editor_absoluteX="115dp"
+                    android:id="@+id/factor" android:onClick="onButtonClick"
+            />
+            <Button
+                    android:text="derive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" tools:layout_editor_absoluteY="240dp"
+                    tools:layout_editor_absoluteX="115dp"
+                    android:id="@+id/derive" android:onClick="onButtonClick"
+            />
+            <Button
+                    android:text="integrate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" tools:layout_editor_absoluteY="240dp"
+                    tools:layout_editor_absoluteX="115dp"
+                    android:id="@+id/integrate" android:onClick="onButtonClick"
+            />
+        </TableRow>
+
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+        >
+            <Button
+                    android:text="zeroes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" tools:layout_editor_absoluteY="240dp"
+                    tools:layout_editor_absoluteX="115dp"
+                    android:id="@+id/zeroes" android:onClick="onButtonClick"
+            />
+            <Button
+                    android:text="tangent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" tools:layout_editor_absoluteY="240dp"
+                    tools:layout_editor_absoluteX="115dp"
+                    android:id="@+id/tangent" android:onClick="onButtonClick"
+            />
+            <Button
+                    android:text="area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" tools:layout_editor_absoluteY="240dp"
+                    tools:layout_editor_absoluteX="115dp"
+                    android:id="@+id/area" android:onClick="onButtonClick"
+            />
+            <Button
+                    android:text="cos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" tools:layout_editor_absoluteY="240dp"
+                    tools:layout_editor_absoluteX="115dp"
+                    android:id="@+id/cos" android:onClick="onButtonClick"
+            />
+        </TableRow>
+
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+        >
+            <Button
+                    android:text="sin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" tools:layout_editor_absoluteY="240dp"
+                    tools:layout_editor_absoluteX="115dp"
+                    android:id="@+id/sin" android:onClick="onButtonClick"
+            />
+            <Button
+                    android:text="tan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" tools:layout_editor_absoluteY="240dp"
+                    tools:layout_editor_absoluteX="115dp"
+                    android:id="@+id/tan" android:onClick="onButtonClick"
+            />
+            <Button
+                    android:text="arccos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" tools:layout_editor_absoluteY="240dp"
+                    tools:layout_editor_absoluteX="115dp"
+                    android:id="@+id/arccos" android:onClick="onButtonClick"
+            />
+            <Button
+                    android:text="arcsin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" tools:layout_editor_absoluteY="240dp"
+                    tools:layout_editor_absoluteX="115dp"
+                    android:id="@+id/arcsin" android:onClick="onButtonClick"
+            />
+        </TableRow>
+
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+        >
+            <Button
+                    android:text="arctan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" tools:layout_editor_absoluteY="240dp"
+                    tools:layout_editor_absoluteX="115dp"
+                    android:id="@+id/arctan" android:onClick="onButtonClick"
+            />
+            <Button
+                    android:text="abs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" tools:layout_editor_absoluteY="240dp"
+                    tools:layout_editor_absoluteX="115dp"
+                    android:id="@+id/abs" android:onClick="onButtonClick"
+            />
+            <Button
+                    android:text="log"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" tools:layout_editor_absoluteY="240dp"
+                    tools:layout_editor_absoluteX="115dp"
+                    android:id="@+id/log" android:onClick="onButtonClick"
+            />
+
+        </TableRow>
+
+    </TableLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/grid" android:id="@+id/linearLayout"
+            android:layout_margin="10px"
+    >
+        <EditText
+                android:layout_width="200px"
+                android:layout_height="wrap_content"
+                android:id="@+id/text1"
+                android:layout_margin="10px"
+        />
+        <EditText
+                android:layout_width="200px"
+                android:layout_height="wrap_content"
+                android:id="@+id/text2"
+                android:layout_margin="10px"
+        />
+        <EditText
+                android:layout_width="200px"
+                android:layout_height="wrap_content"
+                android:id="@+id/text3"
+                android:layout_margin="10px"
+        />
+        <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/send"
+                android:text="SEND"
+                android:onClick="onSendButtonClick"
+        />
+    </LinearLayout>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linearLayout"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:text="Type an expression!"
+            android:gravity="center"
+            android:id="@+id/result"
+    />
+
+
+</android.support.constraint.ConstraintLayout>
